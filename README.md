@@ -4,19 +4,19 @@ below are the scripts used for migration and seeders. I used npm-sequelize.
 
 For creating migration file for table `users`:
 
-sequelize model:generate --name User --attributes firstName:string,lastName:string,address:string,postcode:string,phone:string,email:string,username:string,password:string
+`sequelize model:generate --name User --attributes firstName:string,lastName:string,address:string,postcode:string,phone:string,email:string,username:string,password:string`
 
 For initiating migration process: 
 
-sequelize db:migrate
+`sequelize db:migrate`
 
 For creating seeder file:
 
-sequelize seed:generate --name user-seeder
+`sequelize seed:generate --name user-seeder`
 
 For initiating seeding process:
 
-sequelize db:seed:all
+`sequelize db:seed:all`
 
 Guide on testing script
 1. Import "Yondu Tests.postman_collection" from root directory of repo onto Postman. That should import a Collection named "Yondu Tests".
